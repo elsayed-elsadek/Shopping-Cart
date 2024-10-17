@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", system-ui;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 90%;
+}
+.hidden {
+    display: none;
+}
+
+button{
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);;
+}
+
+
+/* Login page  */
+.login {
+    height: 100vh;
+
+}
+
+.login .container {
+    justify-items: center;
+}
+
+.login input {
+    width: 25rem;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #D9D9D9;
+    outline: none;
+}
+
+.login input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login input::placeholder {
+    color: #A9A9A9;
+    opacity: 1;
+    transition: color 0.3s ease;
+}
+
+.login input:focus::placeholder {
+    color: transparent;
+}
+
+.login button {
+    background-color: #3A5B22;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #4B6E28;
+}
+
+.login button:active {
+    background-color: #2E3F1A;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 576px) {
+    .login input {
+        width: 100%; }
+}
+/* /Login page  */
+
+
+/* home */
+.home .header {
+    position: relative;
+}
+
+.home .header img {
+    position: absolute;
+    top: -30%;
+    right: 5%;
+}
+
+.products .product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0px 10px 55px 0px #00000024;
+    transition: transform 0.3s ease;
+
+}
+.products .product:hover {
+    transform: scale(1.05);
+}
+
+@media(max-width :1224px){
+   .products .product{
+    display: grid;
+        grid-template-columns:1fr !important;
+        
+    }
+}
+
+@media(max-width :767px){
+   .products .product {
+    text-align: center;
+   }
+   .home .header img {
+    top: 25%;
+    right: -12%;
+   }
+     }
+
+     @media(max-width:481px){
+.cardtTitle{
+    flex-direction: column;
+    align-items: center;
+}        
+
+     }
+
+/* /home */
+
+/* my card */
+.mycard{
+    position: relative;
+}
+.totalPrice{
+    text-align: end;
+}
+.myCardProducts{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 6%;
+   background-color: #fff;
+   box-shadow: 0px 10px 55px 0px #00000024;
+   z-index: 1000;
+   transition: opacity 0.3s ease;
+   border: 1px solid #3434;
+
+}
+
+
+.cart-item{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.319);
+}
+
+@media(max-width:1224px){
+    .myCardProducts{
+        top: 4%;
+
+    }
+}
+@media(max-width:767px){
+    .myCardProducts{
+        top: 2%;
+        text-align: center;
+    }
+    .cart-item{
+        flex-direction: column;
+        
+    }
+}
+@media(max-width:481px){
+    .myCardProducts{
+        top:3%;
+font-size: 14px;
+margin: auto;
+text-align: center;
+width: 100%;
+    }
+
+    .cart-item img {
+        display: none;
+    }
+    .totalPrice{
+        text-align: center;
+    }
+    
+}

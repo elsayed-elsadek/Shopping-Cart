@@ -1,0 +1,44 @@
+# Shopping Cart Project
+
+A simple web-based shopping cart system with user registration, login, and product management using `localStorage`.
+
+## Features
+
+- **User Registration and Login**: Users can register and log in using their email and password.
+- **Add to Cart**: Users can add products to their cart.
+- **View and Remove Items from Cart**: Users can view their cart and remove items if needed.
+- **Logout**: Logging out clears the cart and resets the app state.
+
+
+## Technologies Used
+
+- **HTML5**: For the structure of the web pages.
+- **CSS3**: For styling the UI.
+- **Bootstrap 5**: For responsive design and layout structure.
+- **JavaScript (ES6)**: For the interactive functionality and logic.
+- **localStorage**: To store user data and cart items persistently in the browser.
+
+
+## How to Use
+
+1. **Register**: Fill in the registration form to create an account.
+2. **Login**: Use your email and password to log in.
+3. **Browse Products**: View available products and add them to your cart.
+4. **View Cart**: Click the cart icon to view your selected products.
+5. **Logout**: Click the logout button to end your session and clear the cart.
+
+## Local Storage
+
+The app uses `localStorage` to persist data:
+- `login`: Tracks if the user is logged in.
+- `userEmail`, `userPassword`, `firstname`: Stores user info.
+- `cart`: Stores the user's cart items.
+
+## How to Run
+
+1. Clone or download the project.
+2. Open `index.html` in your browser.
+
+## License
+
+This project is free to use and open source.
